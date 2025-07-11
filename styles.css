@@ -1,0 +1,224 @@
+@font-face 
+{
+    font-family: 'Times Newer Roman';
+    src: url('timesnewerroman.ttf') format('truetype');
+}
+
+#name 
+{
+    font-family: 'Times Newer Roman', Times, serif;
+    font-size: xx-large;
+}
+
+body 
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+main
+{
+    position: relative;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#social 
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CV Download Link*/
+.download 
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    background-color: #3498db;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download:hover 
+{
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+.download:active 
+{
+    background-color: #2471a3;
+    transform: translateY(0);
+    color: #ffffff;
+}
+
+
+/*Technologies*/
+
+#technologies 
+{
+  padding: 2rem 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.tech-item 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  margin: 0 2rem;
+}
+
+.tech-item img 
+{
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.tech-item span 
+{
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+}
+
+.tech-carousel 
+{
+  display: flex;
+  width: max-content;
+  animation: scroll-loop var(--duration, 22s) linear infinite;
+}
+
+@keyframes scroll-loop 
+{
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.tech-static 
+{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    min-width: 80px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.inSkillset
+{
+    margin-top: 30px;
+}
+
+footer
+{
+    text-align: center;
+    margin-bottom: 0;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    width: 100%;
+}
+
+i {
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+
+
+
+/*Dark mode*/
+.dark-mode 
+{
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.dark-mode main 
+{
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .download 
+{
+    background-color: #bb86fc;
+    color: #000;
+}
+
+.dark-mode .download:hover 
+{
+    background-color: #9f6dfc;
+    color: #000;
+}
+
+.dark-mode .download:active 
+{
+    background-color: #7f4dfc;
+    color: #000;
+}
+
+.dark-mode .tech-item span 
+{
+    color: #e0e0e0;
+}
+
+.dark-mode footer 
+{
+    color: #aaa;
+}
+
+#toggle-container 
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#toggle-container button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.dark-mode #toggle-container button {
+  color: #f0f0f0;
+}
