@@ -3,61 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Stamatogiannis Leonidas, showcasing web and software development projects, front-end and back-end skills, and technical expertise.">
+    <title>Portfolio Hero</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-    <title>Stamatogiannis Leonidas</title>
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <main>
-        <div id="toggle-container">
-            <button id="darkModeToggle" aria-label="Toggle dark mode">🌞</button>
-        </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#skillset">Experience</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section id="general">
-            <h1 id="name"><i>Stamatogiannis Leonidas</i></h1>
-            <p>📌 Kos, Greece</p>
-            <p>I am a dedicated Information and Communication Systems Engineering (ICSD) student at the University of the Aegean and serve as an active member of the IEEE Aegean Student Branch Committee.<br>I have a strong passion for cybersecurity, networking, Internet of Things (IoT), and edge computing.<br>Committed to continuous learning and practical skill development through hands-on projects and industry certifications, I am driven by a desire to apply innovative solutions to real-world challenges in IT infrastructure and cybersecurity.</p>
-            <a href="cv/cv.pdf" target="_blank" class="download">Download My CV</a>
-            <div id="social>">
-                <a href="https://www.linkedin.com/in/leonidas-stamatogiannis-363447334/" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/stmgleonidas/" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+    <div id="canvas"></div>
+    
+    <header class="hero-container" id="hero">
+        <div class="terminal-frame">
+    
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn close"></span>
+                    <span class="terminal-btn minimize"></span>
+                    <span class="terminal-btn maximize"></span>
+                </div>
+                <span class="terminal-title">Stmgleonidas@Portfolio_site</span>
+            </div>
+  
+            <div class="terminal-content">
+                <div class="terminal-line">
+                    <span class="terminal-user">Stamatogiannis@Leonidas</span>
+                    <span class="terminal-colon">:</span>
+                    <span class="terminal-path">~</span>
+                    <span class="terminal-prompt">$</span>
+                    <span class="terminal-command colored-text-hero">Hi!</span>
+                </div>
+                
+                <div class="terminal-line">
+                    <span class="terminal-user">Stamatogiannis@Leonidas</span>
+                    <span class="terminal-colon">:</span>
+                    <span class="terminal-path">~</span>
+                    <span class="terminal-prompt">$</span>
+                    <span class="terminal-command colored-text-hero">List What_I_do.txt</span>
+                </div>
+                
+                <div class="terminal-line">
+                    <span class="terminal-indent">&gt;</span>
+                    <span class="terminal-output" id="changing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+            </div>
+        </div>
+  
+  
+</div>
+    </header>
+
+    <main>
+        <section class="experience" id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-date">Jul - Sep 2025</h3>
+                            <div class="timeline-title">IT Support Intern</div>
+                            <div class="timeline-company">Bluenet Solutions.</div>
+                            <p class="timeline-description">Completed a summer internship gaining practical experience in IT support and retail technology systems, including exposure to SoftOne ERP platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-date">Apr 2025 - Present</h3>
+                            <div class="timeline-title">Digital Content Creator</div>
+                            <div class="timeline-company">IEEE Aegean SB Committee.</div>
+                            <p class="timeline-description">Designed IEEE's Aegean Student Branch posts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-date">2025 - Present</h3>
+                            <div class="timeline-title">Junior Web Developer</div>
+                            <div class="timeline-company">Independent Projects.</div>
+                            <p class="timeline-description">Designed and developed multiple landing pages and website concepts as independent projects to strengthen my web development skills and explore different design approaches.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-date">Oct 2024 - Present</h3>
+                            <div class="timeline-title">ICSD</div>
+                            <div class="timeline-company">University of the Aegean.</div>
+                            <p class="timeline-description">Currently pursuing a MSc in Information and Communication Systems Engineering. Focusing on Security and Privacy, Communication Systems and Networks and Software Engineering.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-date">2022 - 2024</h3>
+                            <div class="timeline-title">Software Development Practice</div>
+                            <div class="timeline-company">Independent Projects.</div>
+                            <p class="timeline-description">Started with core programming fundamentals, building a diverse range of practice projects to develop essential skills in logical thinking, algorithm design, and software development methodologies.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="technologies">
-            <h2>Skillset</h2>
-            <h3 class="inSkillset">Programming Languages</h3>
-            <div class="tech-carousel" style="--duration: 25s;">
-                <div class="tech-item"><img src="icons/html.png" alt="HTML" /><span>HTML</span></div>
-                <div class="tech-item"><img src="icons/css.png" alt="CSS" /><span>CSS</span></div>
-                <div class="tech-item"><img src="icons/js.png" alt="JavaScript" /><span>JavaScript</span></div>
-                <div class="tech-item"><img src="icons/c.png" alt="C" /><span>C</span></div>
-                <div class="tech-item"><img src="icons/c++.png" alt="C++" /><span>C++</span></div>
-                <div class="tech-item"><img src="icons/python.png" alt="Python" /><span>Python</span></div>
-                <div class="tech-item"><img src="icons/java.png" alt="Java" /><span>Java</span></div>
-            </div>
+        <section class="skillset" id="skillset">
+            <div class="container">
+                <h2 class="section-title">Skillset</h2>
+                
+                <div class="skills-row">
+                    <div class="skill-category">
+                        <h3 class="category-title">Software Engineering</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">C</span>
+                            <span class="skill-item">C++</span>
+                            <span class="skill-item">Java</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">SQL Databases</span>
+                        </div>
+                    </div>
 
-            <h3 class="inSkillset">Graphic Design</h3>
-            <div class="tech-static">
-                <div class="tech-item"><img src="icons/illustrator.png" alt="illustrator" /><span>Illustrator</span></div>
-                <div class="tech-item"><img src="icons/canva.png" alt="JavaScript" /><span>Canva</span></div>
-            </div>
+                    <div class="skill-category">
+                        <h3 class="category-title">Web Development</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">HTML</span>
+                            <span class="skill-item">CSS</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">Three.js</span>
+                            <span class="skill-item">PHP</span>
+                        </div>
+                    </div>
+                </div>
 
-            <h3 class="inSkillset">Technical Skills</h3>
-            <div class="tech-carousel" style="--duration: 20s;">
-                <div class="tech-item"><img src="icons/windows.png" alt="windows" /><span>Windows</span></div>
-                <div class="tech-item"><img src="icons/linux.png" alt="linux" /><span>Linux</span></div>
-                <div class="tech-item"><img src="icons/networking.png" alt="networking" /><span>Network Infrastructure</span></div>
-                <div class="tech-item"><img src="icons/docker.png" alt="docker" /><span>Docker</span></div>
+                <div class="skills-row">
+                    <div class="skill-category">
+                        <h3 class="category-title">Digital Design</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">Adobe Illustrator</span>
+                            <span class="skill-item">Canva</span>
+                            <span class="skill-item">Adobe Photoshop</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Technical & Cybersecurity</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">Linux</span>
+                            <span class="skill-item">Windows</span>
+                            <span class="skill-item">Networking</span>
+                            <span class="skill-item">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+   
+    <footer id="footer">
+        <div class="footer-container">
+    
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: stmgleonidas@gmail.com</p>
+                <p>Phone: (+30) 694 486 2224</p>
+            </div>
 
-    <footer>
-        <p><i class="fa-regular fa-envelope"></i> stmgleonidas [at] gmail [dot] com</p>
-        <p id="getyear">© Stamatogiannis Leonidas. All rights reserved.</p>
-    </footer>
+            <div class="footer-col">
+                <h4>Follow Me</h4>
+                <p><a href="https://www.linkedin.com/in/leonidas-stamatogiannis-363447334/" target="_blank">LinkedIn</a></p>
+                <p><a href="https://www.instagram.com/stmgleonidas/" target="_blank">Instagram</a></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>© <span id="year-range"></span> Stamatogiannis Leonidas</h4>
+            </div>
+
+        </div>
+</footer>
+
 
     <script src="script.js"></script>
 </body>
